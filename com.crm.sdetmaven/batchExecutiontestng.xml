@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.crm.autodesk.genericUtilities.ListenerImplementationClass"/>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="practice.sdet31.testNgPractice.DependsOnMethodsTest"/>
+      <class name="practice.sdet31.testNgPractice.MultipleDataTest"/>
+      <class name="practice.sdet31.testNgPractice.CreateContactWithDataProviderTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

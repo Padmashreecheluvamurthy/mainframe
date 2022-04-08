@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+<listeners>
+<listener class-name="com.crm.autodesk.genericUtilities.ListenerImplementationClass"/>
+</listeners>
+  <test thread-count="3" name="Test-runner1">
+    <classes>
+      <class name="com.crm.testNg.TestNGCreateOrganizationAndChooseIndustryTest"/>
+      <class name="com.crm.testNg.TestNGCreateOrganizationTest"/>
+		<class name="com.crm.testNg.TestNGCreateNewLeadBySelectingDifferentRatingTest"/>
+    </classes>
+  </test> 
+<test thread-count="3" name="Test-runner2">
+    <classes>
+      <class name="com.crm.testNg.TestNGCreateLeadBySelectingLeadStatusTest"/>
+      <class name="com.crm.testNg.TestNGCreateContactAndChooseOrganizationTest"/>
+	<class name="com.crm.testNg.TestNGCreateCampaignAndChooseProductTest"/>
+    </classes>
+  </test>
+</suite> 
